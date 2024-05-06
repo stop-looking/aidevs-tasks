@@ -1,0 +1,18 @@
+aidevs:
+  api-key: ${AI_DEVS_API_KEY:}
+
+logging:
+  level:
+    org.j55: DEBUG
+
+spring:
+  ai:
+    vectorstore:
+      qdrant:
+        host: "localhost"
+        port: 6334
+        collection-name: "my-collection"
+
+
+server:
+  port: 9060
